@@ -8,9 +8,9 @@ from tensorflow import keras
 print("TensorFlow version: {}".format(tf.__version__))
 print("TensorFlow Chapter 4: Overfitting and underfitting")
 
-# As seen in previous chapters, accuracy on validation set peaks at a particular number of epochs, and the starts decreasing
+# As seen in previous chapters, accuracy on the validation set peaks at a particular number of epochs, and the starts decreasing
 # Overfitting has happened. The network learns patterns on the train set that do not generalize to the test data
-# Prevent overfitting, use more training data. When not possible, use regularization techniques
+# Prevent overfitting by use more training data. When not possible, use regularization techniques
 # Download the Internet Movie Database IMDB. Multi-hot encode the sentences (turning them into vectors of 0s and 1s)
 # Example, the sequence [3, 5] will be a 10000-dim vector with all zeros except for the indices 3 and 5, being there ones
 NUM_WORDS = 10000
