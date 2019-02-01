@@ -19,7 +19,7 @@ def multi_hot_sequences(sequences, dimension = NUM_WORDS):
     # Create an zero matrix of shape (len(sequences), dimension)
     results = np.zeros((len(sequences), dimension))
     for i, word_indices in enumerate(sequences):
-        # Set specific indices of results[i] to be 1s
+        # Set specific indices of results[i] to be 1
         results[i, word_indices] = 1.0
     return results
 
